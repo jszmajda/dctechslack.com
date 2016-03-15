@@ -5,27 +5,42 @@
     <style>
       body {
         margin: 3em;
-        font-family: "Helvetica Neue", Helvetica, Arial
+        font-family: "Helvetica Neue", Helvetica, Arial;
+        color: black;
+        max-width: 800px;
       }
       p {
         font-size: 15px;
         margin: 15px 0px;
+        clear: both;
+      }
+      .info {
+        padding-top: 20px;
+      }
+      .linky {
+        font-size: 20px;
+        color: #CCCCCC;
       }
       a {
-        font-size: 20px;
         text-decoration: none;
+        color: #880000;
+      }
+      h1, img {
+        float: left;
+        padding-right: 20px;
       }
 
     </style>
   </head>
 
   <body>
+    <img src="/dctech-logo.png" height="100" width="167"/>
     <h1>DC Tech Slack - Welcome!</h1>
 
-    <p>We're a free, public Slack for the Washington, DC Tech community. With over 1000 members, we have channels focused on everything from #python to #politics</p>
+    <p class="info">We're a free, public Slack for the Washington, DC Tech community. With over 1000 members, we have channels focused on everything from #python to #politics</p>
 
-    <p><a href="http://dctechslack.herokuapp.com">Join us!</a></p>
+    <p class="linky"> &gt; <a href="http://dctechslack.herokuapp.com">Join us!</a></p>
 
-    <p><a href="https://slofile.com/slack/dctech">Learn more about us, or find other Slacks on Slofile</a></p>
+    <p class="linky"> &gt; <a href="https://slofile.com/slack/dctech">Learn more about us, or find other Slacks on Slofile</a></p>
   </body>
 </html>
