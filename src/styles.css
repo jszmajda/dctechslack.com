@@ -1,0 +1,33 @@
+body {
+    margin: 3em;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    color: black;
+    max-width: 800px;
+}
+p {
+    font-size: 15px;
+    margin: 15px 0px;
+    clear: both;
+}
+.info {
+    padding-top: 20px;
+}
+.linky {
+    font-size: 20px;
+    color: #CCCCCC;
+}
+.bonus-linky {
+    color: #CCCCCC;
+}
+a {
+    text-decoration: none;
+    color: #880000;
+    transition: all .25s;
+}
+a:hover {
+    color: #D54D4D;
+}
+h1, img {
+    float: left;
+    padding-right: 20px;
+}
