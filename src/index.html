@@ -4,51 +4,61 @@
     <title>DCTech Chat</title>
     <style>
       body {
-        margin: 3em;
         font-family: "Helvetica Neue", Helvetica, Arial;
-        color: black;
-        max-width: 800px;
       }
-      p {
-        font-size: 15px;
-        margin: 15px 0px;
-        clear: both;
+      code {
+        background-color: #F4F4F4;
+        padding: 4px;
       }
-      .info {
-        padding-top: 20px;
-      }
-      .bullet {
-        color: #CCCCCC;
-      }
-      .linky {
-        font-size: 20px;
-      }
-      a {
-        text-decoration: none;
-        color: #880000;
-      }
-      h1, img {
-        float: left;
-        padding-right: 20px;
-      }
-
     </style>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css"/>
   </head>
 
-  <body>
-    <img src="/dctech-logo.png" height="100" width="167"/>
-    <h1>DCTech Slack - Welcome!</h1>
-
-    <p class="info">We're a free, public Slack for the Washington, DCTech community. With over 1000 members, we have channels focused on everything from #python to #politics</p>
-    <p class="info">Join us!</p>
-    <p class="linky"> <span class="bullet">&gt;</span> <a href="http://dctechslack.herokuapp.com">Sign up here</a></p>
-
-    <p class="bonus-linky"> <span class="bullet">&gt;</span> <a href="http://dctech.slack.com">Sign in at dctech.slack.com</a></p>
-
-    <p class="bonus-linky"> <span class="bullet">&gt;</span> <a href="/code_of_conduct.html">Code of Conduct</a></p>
-
-    <p class="bonus-linky"> <span class="bullet">&gt;</span> <a href="https://slofile.com/slack/dctech">Learn more about us, or find other Slacks on Slofile</a></p>
-
-    <p class="bonus-linky"> <span class="bullet">&gt;</span> <a href="http://dctech.slackarchive.io/">Our Archive</a></p>
+  <body class="near-black bg-near-white">
+    <div class="bg-white mw8 center min-vh-100 shadow-1">
+      <div class="ph5-ns tc bg-white">
+        <div class="center flex items-center justify-center v-mid">
+          <div class="center tc db">
+            <img src="/dctech-logo.png" style="width: 167px; min-width:167px; height:100px; min-height:100px; "/>
+          </div>
+          <div class="f1 flex-auto">Welcome to DCTech Slack</div>
+        </div>
+        <div class="pv3 ph4 ph5-ns lh-copy measure-wide center">
+          We're a free, public Slack for the Washington, DC Tech community. With over 1000 members, we have channels focused on everything from <code>#python</code> to <code>#politics</code>
+          <p class="info">Join us!</p>
+        </div>
+      </div>
+      <div class="ph5-ns tc bg-white">
+        <div class="flex flex-wrap space-between">
+          <div class="flex items-center justify-center center">
+            <a class="black flex items-center justify-center tc bg-near-white shadow-hover shadow-4 link lh-copy pa3 pa3-ns ma2 h4-ns w5 br2 ba" href="/code_of_conduct.html">
+              1. Read the <br />Code of Conduct
+            </a>
+          </div>
+          <div class="flex items-center justify-center center">
+            <a class="black flex items-center justify-center tc bg-near-white shadow-hover shadow-4 link lh-copy pa3 pa3-ns ma2 h4-ns w5 br2 ba" href="http://dctechslack.herokuapp.com">
+              2. Sign up on <br />dctechslack.herokuapp.com
+            </a>
+          </div>
+          <div class="flex items-center justify-center center">
+            <a class="black flex items-center justify-center tc bg-near-white shadow-hover shadow-4 link lh-copy pa3 pa3-ns ma2 h4-ns w5 br2 ba" href="http://dctech.slack.com">
+              3. Sign in at <br />dctech.slack.com
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-wrap space-between mt4">
+          <div class="flex items-center justify-center center">
+            <a class="black flex items-center justify-center tc bg-near-white shadow-hover shadow-4 link lh-copy pa3 pa3-ns ma2 h4-ns w5 br2 ba" href="https://slofile.com/slack/dctech">
+              Slofile:<br />Find other Slacks, or learn more about us
+            </a>
+          </div>
+          <div class="flex items-center justify-center center">
+            <a class="black flex items-center justify-center tc bg-near-white shadow-hover shadow-4 link lh-copy pa3 pa3-ns ma2 h4-ns w5 br2 ba" href="http://dctech.slackarchive.io/">
+              Archived Chat History
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
