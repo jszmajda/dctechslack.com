@@ -57,13 +57,13 @@
               </div>
             </a>
           </div>
-          <!-- This block is hidden unless a query param like `?recommendChannel=javascript` is in the url -->
-          <div id="recommend-channel-container" class="flex items-center justify-center center" style="display:none" aria-hidden="true">
+          <!-- This block is hidden unless a query param like `?recommendedChannel=javascript` is in the url -->
+          <div id="recommended-channel-container" class="flex items-center justify-center center" style="display:none" aria-hidden="true">
             <a class="black flex items-center justify-center tc bg-near-white shadow-hover shadow-4 link lh-copy pa3 pa3-ns ma2 h4-ns w5 br2 ba" href="http://dctech.slack.com">
               <div>
                 <div class="f3 mb2">4</div>
                 <div>Join Channels</div>
-                <div class="gray">Check out <span id="recommend-channel"></span></div>
+                <div class="gray">Check out <span id="recommended-channel"></span></div>
               </div>
             </a>
           </div>
@@ -94,9 +94,9 @@
       return(false);
     }
 
-    var containerElem = document.getElementById("recommend-channel-container");
-    var channelElem = document.getElementById("recommend-channel");
-    var channel = getQueryVariable("recommendChannel");
+    var channelContainerElem = document.getElementById("recommended-channel-container");
+    var channelElem = document.getElementById("recommended-channel");
+    var channel = getQueryVariable("recommendedChannel");
 
     if (channel) {
       channelElem.textContent = "#" + channel.toString();
