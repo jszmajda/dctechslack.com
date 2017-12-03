@@ -59,11 +59,11 @@
           </div>
           <!-- This block is hidden unless a query param like `?recommendedChannel=javascript` is in the url -->
           <div id="recommended-channel-container" class="flex items-center justify-center center" style="display:none" aria-hidden="true">
-            <a class="black flex items-center justify-center tc bg-near-white shadow-hover shadow-4 link lh-copy pa3 pa3-ns ma2 h4-ns w5 br2 ba" href="http://dctech.slack.com">
+            <a id="recommended-channel-link" class="black flex items-center justify-center tc bg-near-white shadow-hover shadow-4 link lh-copy pa3 pa3-ns ma2 h4-ns w5 br2 ba" href="http://dctech.slack.com">
               <div>
                 <div class="f3 mb2">4</div>
-                <div>Join Channels</div>
-                <div class="gray">Check out <span id="recommended-channel"></span></div>
+                <div>Join Channel</div>
+                <div class="gray"><span id="recommended-channel"></span></div>
               </div>
             </a>
           </div>
@@ -95,13 +95,16 @@
     }
 
     var channelContainerElem = document.getElementById("recommended-channel-container");
+    var channelLinkElem = document.getElementById("recommended-channel-link");
     var channelElem = document.getElementById("recommended-channel");
     var channel = getQueryVariable("recommendedChannel");
 
     if (channel) {
-      channelElem.textContent = "#" + channel.toString();
+      channel = encodeURIComponent(channel.toLowerCase());
+      channelLinkElem.href = `https://dctech.slack.com/messages/${channel}`;
+      channelElem.textContent = `#${channel}`;
       // Remove "display: none" to unhide.
-      containerElem.style.display = null;
+      channelContainerElem.style.display = null;
     }
   </script>
   </body>
